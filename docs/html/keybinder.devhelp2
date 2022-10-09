@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<book xmlns="http://www.devhelp.net/book" title="libkeybinder Reference Manual" link="index.html" author="" name="keybinder" version="2" language="c">
+  <chapters>
+    <sub name="libkeybinder" link="ch01.html">
+      <sub name="keybinder" link="keybinder-keybinder.html"/>
+    </sub>
+    <sub name="Object Hierarchy" link="object-tree.html"/>
+    <sub name="API Index" link="api-index-full.html"/>
+    <sub name="Index of deprecated API" link="deprecated-api-index.html"/>
+    <sub name="Annotation Glossary" link="annotation-glossary.html"/>
+  </chapters>
+  <functions>
+    <keyword type="function" name="KeybinderHandler ()" link="keybinder-keybinder.html#KeybinderHandler"/>
+    <keyword type="function" name="keybinder_init ()" link="keybinder-keybinder.html#keybinder-init"/>
+    <keyword type="function" name="keybinder_bind ()" link="keybinder-keybinder.html#keybinder-bind"/>
+    <keyword type="function" name="keybinder_bind_full ()" link="keybinder-keybinder.html#keybinder-bind-full" since="0.3.0"/>
+    <keyword type="function" name="keybinder_unbind ()" link="keybinder-keybinder.html#keybinder-unbind"/>
+    <keyword type="function" name="keybinder_unbind_all ()" link="keybinder-keybinder.html#keybinder-unbind-all" since="0.3.0"/>
+    <keyword type="function" name="keybinder_get_current_event_time ()" link="keybinder-keybinder.html#keybinder-get-current-event-time"/>
+  </functions>
+</book>

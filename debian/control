@@ -1,0 +1,86 @@
+Source: keybinder
+Section: libs
+Priority: optional
+Maintainer: Andrew Starr-Bochicchio <asb@debian.org>
+Build-Depends: debhelper-compat (= 12),
+               dh-sequence-gir,
+               pkg-config (>= 0.9.0),
+               libgtk2.0-dev (>= 2.20),
+               libgirepository1.0-dev (>= 0.6.7),
+               gtk-doc-tools (>= 1.14)
+Standards-Version: 3.9.6
+Homepage: https://github.com/engla/keybinder
+Vcs-Git: https://salsa.debian.org/debian/keybinder.git
+Vcs-Browser: https://salsa.debian.org/debian/keybinder
+
+Package: libkeybinder0
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: registers global key bindings for applications
+ keybinder is a library for registering global keyboard shortcuts to be used by
+ GTK-based applications under the X Window System.
+ .
+ When a combination of key is pressed, keybinder notifies it to the registering
+ application, which can execute one or more operations based on the event
+ previously registered.
+ .
+ Originally written as part of the Tomboy project, keybinder has been
+ distributed as stand-alone library let other applications to use key binding.
+
+Package: gir1.2-keybinder-0.0
+Section: introspection
+Architecture: any
+Depends: ${gir:Depends},
+         ${shlibs:Depends},
+         ${misc:Depends}
+Description: registers global key bindings for applications - introspection data
+ keybinder is a library for registering global keyboard shortcuts to be used by
+ GTK-based applications under the X Window System.
+ .
+ When a combination of key is pressed, keybinder notifies it to the registering
+ application, which can execute one or more operations based on the event
+ previously registered.
+ .
+ Originally written as part of the Tomboy project, keybinder has been
+ distributed as stand-alone library let other applications to use key binding.
+ .
+ This package contains introspection data.
+
+Package: libkeybinder-dev
+Section: libdevel
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         libkeybinder0 (= ${binary:Version}),
+         gir1.2-keybinder-0.0 (= ${binary:Version}),
+         libgtk2.0-dev
+Description: registers global key bindings for applications - development headers
+ keybinder is a library for registering global keyboard shortcuts to be used by
+ GTK-based applications under the X Window System.
+ .
+ When a combination of key is pressed, keybinder notifies it to the registering
+ application, which can execute one or more operations based on the event
+ previously registered.
+ .
+ Originally written as part of the Tomboy project, keybinder has been
+ distributed as stand-alone library let other applications to use key binding.
+ .
+ This package contains libkeybinder development headers.
+
+Package: keybinder-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends}
+Description: registers global key bindings for applications - documentation
+ keybinder is a library for registering global keyboard shortcuts to be used by
+ GTK-based applications under the X Window System.
+ .
+ When a combination of key is pressed, keybinder notifies it to the registering
+ application, which can execute one or more operations based on the event
+ previously registered.
+ .
+ Originally written as part of the Tomboy project, keybinder has been
+ distributed as stand-alone library let other applications to use key binding.
+ .
+ This package contains documentation and API reference.

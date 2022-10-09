@@ -1,0 +1,17 @@
+Description: Define python multiarch header include paths
+ Use python-config to get the multiarch header include paths
+Author: Micah Gersten <micahg@ubuntu.com>
+
+Index: keybinder/m4/python.m4
+===================================================================
+--- keybinder.orig/m4/python.m4	2015-11-08 13:12:12.785838096 -0500
++++ keybinder/m4/python.m4	2015-11-08 13:12:12.785838096 -0500
+@@ -45,7 +45,7 @@
+ dnl deduce PYTHON_INCLUDES
+ py_prefix=`$PYTHON -c "import sys; print sys.prefix"`
+ py_exec_prefix=`$PYTHON -c "import sys; print sys.exec_prefix"`
+-PYTHON_INCLUDES="-I${py_prefix}/include/python${PYTHON_VERSION}"
++PYTHON_INCLUDES=`$PYTHON-config --includes`
+ if test "$py_prefix" != "$py_exec_prefix"; then
+   PYTHON_INCLUDES="$PYTHON_INCLUDES -I${py_exec_prefix}/include/python${PYTHON_VERSION}"
+ fi

@@ -1,0 +1,292 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>keybinder: libkeybinder Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+<link rel="home" href="index.html" title="libkeybinder Reference Manual">
+<link rel="up" href="ch01.html" title="libkeybinder">
+<link rel="prev" href="ch01.html" title="libkeybinder">
+<link rel="next" href="object-tree.html" title="Object Hierarchy">
+<meta name="generator" content="GTK-Doc V1.24 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#keybinder-keybinder.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch01.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="object-tree.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="keybinder-keybinder"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="keybinder-keybinder.top_of_page"></a>keybinder</span></h2>
+<p>keybinder</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="keybinder-keybinder.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="keybinder-keybinder.html#KeybinderHandler" title="KeybinderHandler ()">*KeybinderHandler</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="keybinder-keybinder.html#keybinder-init" title="keybinder_init ()">keybinder_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="keybinder-keybinder.html#keybinder-bind" title="keybinder_bind ()">keybinder_bind</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="keybinder-keybinder.html#keybinder-bind-full" title="keybinder_bind_full ()">keybinder_bind_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="keybinder-keybinder.html#keybinder-unbind" title="keybinder_unbind ()">keybinder_unbind</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="keybinder-keybinder.html#keybinder-unbind-all" title="keybinder_unbind_all ()">keybinder_unbind_all</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint32</span>
+</td>
+<td class="function_name">
+<a class="link" href="keybinder-keybinder.html#keybinder-get-current-event-time" title="keybinder_get_current_event_time ()">keybinder_get_current_event_time</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="keybinder-keybinder.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="keybinder-keybinder.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="KeybinderHandler"></a><h3>KeybinderHandler ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*KeybinderHandler<span class="c_punctuation">)</span> (<em class="parameter"><code>const <span class="type">char</span> *keystring</code></em>,
+                     <em class="parameter"><code><span class="type">void</span> *user_data</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="keybinder-init"></a><h3>keybinder_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+keybinder_init (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Initialize the keybinder library.</p>
+<p>This function must be called after initializing GTK, before calling any
+other function in the library. Can only be called once.</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="keybinder-bind"></a><h3>keybinder_bind ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+keybinder_bind (<em class="parameter"><code>const <span class="type">char</span> *keystring</code></em>,
+                <em class="parameter"><code><a class="link" href="keybinder-keybinder.html#KeybinderHandler" title="KeybinderHandler ()"><span class="type">KeybinderHandler</span></a> handler</code></em>,
+                <em class="parameter"><code><span class="type">void</span> *user_data</code></em>);</pre>
+<p>Grab a key combination globally and register a callback to be called each
+time the key combination is pressed.</p>
+<p>This function is excluded from introspected bindings and is replaced by
+keybinder_bind_full.</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="id-1.2.2.5.4.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>keystring</p></td>
+<td class="parameter_description"><p>an accelerator description (<a href="http://library.gnome.org/devel/gtk3/gtk2-Keyboard-Accelerators.html#gtk-accelerator-parse"><code class="function">gtk_accelerator_parse()</code></a> format)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>handler</p></td>
+<td class="parameter_description"><p>callback function</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>data to pass to <em class="parameter"><code>handler</code></em>
+</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.5.4.8"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the accelerator could be grabbed</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="keybinder-bind-full"></a><h3>keybinder_bind_full ()</h3>
+<pre class="programlisting"><a href="https://developer.gnome.org/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+keybinder_bind_full (<em class="parameter"><code>const <span class="type">char</span> *keystring</code></em>,
+                     <em class="parameter"><code><a class="link" href="keybinder-keybinder.html#KeybinderHandler" title="KeybinderHandler ()"><span class="type">KeybinderHandler</span></a> handler</code></em>,
+                     <em class="parameter"><code><span class="type">void</span> *user_data</code></em>,
+                     <em class="parameter"><code><a href="https://developer.gnome.org/glib/unstable/glib-Datasets.html#GDestroyNotify"><span class="type">GDestroyNotify</span></a> notify</code></em>);</pre>
+<p>Grab a key combination globally and register a callback to be called each
+time the key combination is pressed.</p>
+<p><span class="annotation">[<acronym title="Rename the original symbol's name to SYMBOL."><span class="acronym">rename-to</span></acronym> keybinder_bind]</span></p>
+<div class="refsect3">
+<a name="id-1.2.2.5.5.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>keystring</p></td>
+<td class="parameter_description"><p>an accelerator description (<a href="http://library.gnome.org/devel/gtk3/gtk2-Keyboard-Accelerators.html#gtk-accelerator-parse"><code class="function">gtk_accelerator_parse()</code></a> format)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>handler</p></td>
+<td class="parameter_description"><p>        callback function. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="The callback is valid until the GDestroyNotify argument is called."><span class="acronym">scope notified</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>  data to pass to <em class="parameter"><code>handler</code></em>
+. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="This parameter is a 'user_data', for callbacks; many bindings can pass NULL here."><span class="acronym">closure</span></acronym>][<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>notify</p></td>
+<td class="parameter_description"><p>  called when <em class="parameter"><code>handler</code></em>
+is unregistered. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="NULL is OK, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.2.5.5.7"></a><h4>Returns</h4>
+<p> <a href="https://developer.gnome.org/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if the accelerator could be grabbed</p>
+</div>
+<p class="since">Since: 0.3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="keybinder-unbind"></a><h3>keybinder_unbind ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+keybinder_unbind (<em class="parameter"><code>const <span class="type">char</span> *keystring</code></em>,
+                  <em class="parameter"><code><a class="link" href="keybinder-keybinder.html#KeybinderHandler" title="KeybinderHandler ()"><span class="type">KeybinderHandler</span></a> handler</code></em>);</pre>
+<p>Unregister a specific previously bound callback for this keystring.</p>
+<p>This function is excluded from introspected bindings and is replaced by
+keybinder_unbind_all.</p>
+<p><span class="annotation">[<acronym title="Exposed in C code, not necessarily available in other languages."><span class="acronym">skip</span></acronym>]</span></p>
+<div class="refsect3">
+<a name="id-1.2.2.5.6.7"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>keystring</p></td>
+<td class="parameter_description"><p>an accelerator description (<a href="http://library.gnome.org/devel/gtk3/gtk2-Keyboard-Accelerators.html#gtk-accelerator-parse"><code class="function">gtk_accelerator_parse()</code></a> format)</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>handler</p></td>
+<td class="parameter_description"><p>callback function</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="keybinder-unbind-all"></a><h3>keybinder_unbind_all ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+keybinder_unbind_all (<em class="parameter"><code>const <span class="type">char</span> *keystring</code></em>);</pre>
+<p>Unregister all previously bound callbacks for this keystring.</p>
+<p><span class="annotation">[<acronym title="Rename the original symbol's name to SYMBOL."><span class="acronym">rename-to</span></acronym> keybinder_unbind]</span></p>
+<div class="refsect3">
+<a name="id-1.2.2.5.7.6"></a><h4>Parameters</h4>
+<div class="informaltable"><table width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>keystring</p></td>
+<td class="parameter_description"><p>an accelerator description (<a href="http://library.gnome.org/devel/gtk3/gtk2-Keyboard-Accelerators.html#gtk-accelerator-parse"><code class="function">gtk_accelerator_parse()</code></a> format)</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<p class="since">Since: 0.3.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="keybinder-get-current-event-time"></a><h3>keybinder_get_current_event_time ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint32</span>
+keybinder_get_current_event_time (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<div class="refsect3">
+<a name="id-1.2.2.5.8.4"></a><h4>Returns</h4>
+<p> the current event timestamp</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="keybinder-keybinder.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.24</div>
+</body>
+</html>

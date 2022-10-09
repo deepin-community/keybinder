@@ -1,0 +1,11 @@
+<SECTION>
+<FILE>keybinder</FILE>
+KeybinderHandler
+keybinder_init
+keybinder_bind
+keybinder_bind_full
+keybinder_unbind
+keybinder_unbind_all
+keybinder_get_current_event_time
+</SECTION>
+

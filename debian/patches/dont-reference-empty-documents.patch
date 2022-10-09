@@ -1,0 +1,18 @@
+Author: Paul Gevers <elbrus@debian.org>
+Upstream: https://github.com/ulidtko/keybinder/commit/26a9a16d1ed3a1cb41cb01f11e654fe8af2b2c28
+
+Index: keybinder/docs/keybinder-docs.sgml
+===================================================================
+--- keybinder.orig/docs/keybinder-docs.sgml
++++ keybinder/docs/keybinder-docs.sgml
+@@ -21,10 +21,6 @@
+         <xi:include href="xml/keybinder.xml"/>
+ 
+   </chapter>
+-  <chapter id="object-tree">
+-    <title>Object Hierarchy</title>
+-     <xi:include href="xml/tree_index.sgml"/>
+-  </chapter>
+   <index id="api-index-full">
+     <title>API Index</title>
+     <xi:include href="xml/api-index-full.xml"><xi:fallback /></xi:include>
